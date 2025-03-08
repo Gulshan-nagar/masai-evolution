@@ -81,3 +81,12 @@ for(let char of newString){
 }
 
 // console.log(result)
+const express = require("express")
+const express = require("mongoose")
+const app= express()
+app.use(express.json)
+
+app.get("/", (req,res)=>{
+  console.log("this is check route")
+})
+app.listen(3000)
